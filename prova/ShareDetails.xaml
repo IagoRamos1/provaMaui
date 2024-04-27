@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="prova.ShareDetails"
+             Title="ShareDetails">
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25"
+        BackgroundColor="Silver">
+
+        
+            <Grid ColumnSpacing="5" RowSpacing="10" Padding="5" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <Label Grid.Row="0" Grid.Column="0">Nome curto:</Label>
+                <Label x:Name="shortName" Grid.Row="0" Grid.Column="1"></Label>
+                <Label Grid.Row="1" Grid.Column="0">Nome completo:</Label>
+                <Label x:Name="longName" Grid.Row="1" Grid.Column="1"></Label>
+                <Label Grid.Row="2" Grid.Column="0">Mudança regular de mercado:</Label>
+                <Label x:Name="regularMarketChange" Grid.Row="2" Grid.Column="1"></Label>
+                <Label Grid.Row="3" Grid.Column="0">Porcetagem regular de mudança de mercado:</Label>
+                <Label x:Name="regularMarketChangePercent" Grid.Row="3" Grid.Column="1"></Label>
+                <Label Grid.Row="4" Grid.Column="0">Preço regular de mercado:</Label>
+                <Label x:Name="regularMarketPrice" Grid.Row="4" Grid.Column="1"></Label>
+                <Label Grid.Row="5" Grid.Column="0">Alta normal do dia de mercado:</Label>
+                <Label x:Name="regularMarketDayHigh" Grid.Row="5" Grid.Column="1"></Label>
+            </Grid>
+
+
+
+    </VerticalStackLayout>
+</ContentPage>
